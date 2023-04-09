@@ -1,0 +1,8 @@
+Le Trung Hieu;10B1;0338903901;Ben Tre
+Nguyen Van A;10B1;0143352250;Vinh Long
+Truong Van Duy;10B1;083658376;Ca Mau
+Do Phuoc Thanh;10B1;0657359175;Ha Noi
+Le Trung To;10B2;0946371857;California
+Nguyen Van B;10B2;0453819472;New York
+Nguyen Thanh Tam;10B2;0967385738;The End
+Huynh Tan Chill;10B2;0586736492;Ben Tre
