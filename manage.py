@@ -14,8 +14,56 @@ def getInfor():
  global stt
  global table
  table = [[stt, ten, lop, sdt, que],]
+ sinhvien = file.readline()
  stt += 1
+ sv = sinhvien.split(";")
+ ten = sv[0]
+ lop = sv[1] 
+ sdt = sv[2]
+ que = sv[3].strip()
+ table.append([stt, ten, lop, sdt, que])
  sinhvien = file.readline()
+ stt +=1
+ sv = sinhvien.split(";")
+ ten = sv[0]
+ lop = sv[1] 
+ sdt = sv[2]
+ que = sv[3].strip()
+ table.append([stt, ten, lop, sdt, que])
+ sinhvien = file.readline()
+ stt +=1
+ sv = sinhvien.split(";")
+ ten = sv[0]
+ lop = sv[1] 
+ sdt = sv[2]
+ que = sv[3].strip()
+ table.append([stt, ten, lop, sdt, que])
+ sinhvien = file.readline()
+ stt +=1
+ sv = sinhvien.split(";")
+ ten = sv[0]
+ lop = sv[1] 
+ sdt = sv[2]
+ que = sv[3].strip()
+ table.append([stt, ten, lop, sdt, que])
+ sinhvien = file.readline()
+ stt +=1
+ sv = sinhvien.split(";")
+ ten = sv[0]
+ lop = sv[1] 
+ sdt = sv[2]
+ que = sv[3].strip()
+ table.append([stt, ten, lop, sdt, que])
+ sinhvien = file.readline()
+ stt +=1
+ sv = sinhvien.split(";")
+ ten = sv[0]
+ lop = sv[1] 
+ sdt = sv[2]
+ que = sv[3].strip()
+ table.append([stt, ten, lop, sdt, que])
+ sinhvien = file.readline()
+ stt +=1
  sv = sinhvien.split(";")
  ten = sv[0]
  lop = sv[1] 
@@ -23,56 +71,14 @@ def getInfor():
  que = sv[3].strip()
  table.append([stt, ten, lop, sdt, que])
  stt +=1
- sinhvien = file.readline()
- sv = sinhvien.split(";")
- ten = sv[0]
- lop = sv[1] 
- sdt = sv[2]
- que = sv[3].strip()
- table.append([stt, ten, lop, sdt, que])
- stt +=1
- sinhvien = file.readline()
- sv = sinhvien.split(";")
- ten = sv[0]
- lop = sv[1] 
- sdt = sv[2]
- que = sv[3].strip()
- table.append([stt, ten, lop, sdt, que])
- stt +=1
- sinhvien = file.readline()
- sv = sinhvien.split(";")
- ten = sv[0]
- lop = sv[1] 
- sdt = sv[2]
- que = sv[3].strip()
- table.append([stt, ten, lop, sdt, que])
- stt +=1
- sinhvien = file.readline()
- sv = sinhvien.split(";")
- ten = sv[0]
- lop = sv[1] 
- sdt = sv[2]
- que = sv[3].strip()
- table.append([stt, ten, lop, sdt, que])
- stt +=1
- sinhvien = file.readline()
- sv = sinhvien.split(";")
- ten = sv[0]
- lop = sv[1] 
- sdt = sv[2]
- que = sv[3].strip()
- table.append([stt, ten, lop, sdt, que])
- stt +=1
- sinhvien = file.readline()
- sv = sinhvien.split(";")
- ten = sv[0]
- lop = sv[1] 
- sdt = sv[2]
- que = sv[3].strip()
- table.append([stt, ten, lop, sdt, que])
- stt +=1
-getInfor()
-print("1. Information\n" + "2. Search\n" + "3. Edit\n" + "4. Quit\n")
-mode = int(input("Choose your mode: "))
-if mode == 1:
- print(tabulate(table, headers=["STT", "Ten", "Lop", "So Dien Thoai", "Que Quan"], tablefmt="fancy_grid"))
+def getMode():
+    print("\n1. Information\n" + "2. Search\n" + "3. Edit\n" + "4. Quit\n")
+    mode = int(input("Choose your mode: "))
+    if mode == 1:
+        print(tabulate(table, headers=["STT", "Ten", "Lop", "So Dien Thoai", "Que Quan"], tablefmt="fancy_grid"))
+        getMode()
+    else:
+        pass
+if __name__=="__main__":
+    getInfor()
+    getMode()
