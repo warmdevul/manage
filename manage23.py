@@ -20,7 +20,7 @@ def getMode():
     print("\n1. Information\n" + "2. Search\n" + "3. Edit\n" + "4. Quit\n")
     mode = int(input("Choose your mode: "))
     if mode == 1:
-        print("\n", tabulate(table, headers=["STT", "Ten", "Lop", "So Dien Thoai", "Que Quan"], tablefmt="fancy_grid"))
+        print(tabulate(table, headers=["STT", "Ten", "Lop", "So Dien Thoai", "Que Quan"], tablefmt="fancy_grid"))
         getMode()
     else:
         pass
