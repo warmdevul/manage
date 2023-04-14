@@ -16,12 +16,19 @@ def getInfor():
         table.append([numerical_order, full_name, grade, contact, location])
         numerical_order += 1
         students = file.readline()
+def search():
+    to_search = str(input("Nhap tu khoa tim kiem: "))
+    for search in table:
+        if search == to_search:
+            print("already")
 def getMode():
     print("\n1. Information\n" + "2. Search\n" + "3. Edit\n" + "4. Quit\n")
     mode = int(input("Choose your mode: "))
     if mode == 1:
         print(tabulate(table, headers=["STT", "Ten", "Lop", "So Dien Thoai", "Que Quan"], tablefmt="fancy_grid"))
         getMode()
+    elif mode == 2:
+        search()
     else:
         pass
 if __name__=="__main__":
