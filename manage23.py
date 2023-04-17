@@ -1,4 +1,4 @@
-from tabulate import tabulate
+fƠrom tabulate import tabulate
 
 numerical_order = 1
 table = []
@@ -17,10 +17,8 @@ def getInfor():
         numerical_order += 1
         students = file.readline()
 def search():
-    to_search = str(input("Nhap tu khoa tim kiem: "))
-    for search in table:
-        if search == to_search:
-            print("already")
+    for search_a in table:
+        if search_a[]
 def getMode():
     print("\n1. Information\n" + "2. Search\n" + "3. Edit\n" + "4. Quit\n")
     mode = int(input("Choose your mode: "))
