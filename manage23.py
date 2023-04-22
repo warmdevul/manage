@@ -1,4 +1,4 @@
-fƠrom tabulate import tabulate
+from tabulate import tabulate
 
 numerical_order = 1
 table = []
@@ -16,9 +16,6 @@ def getInfor():
         table.append([numerical_order, full_name, grade, contact, location])
         numerical_order += 1
         students = file.readline()
-def search():
-    for search_a in table:
-        if search_a[]
 def getMode():
     print("\n1. Information\n" + "2. Search\n" + "3. Edit\n" + "4. Quit\n")
     mode = int(input("Choose your mode: "))
@@ -26,7 +23,7 @@ def getMode():
         print(tabulate(table, headers=["STT", "Ten", "Lop", "So Dien Thoai", "Que Quan"], tablefmt="fancy_grid"))
         getMode()
     elif mode == 2:
-        search()
+        pass
     else:
         pass
 if __name__=="__main__":
